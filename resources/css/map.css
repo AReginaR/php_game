@@ -1,0 +1,169 @@
+body{
+    overflow: hidden;
+}
+.map{
+ /*   margin: 4em 0;*/
+    padding: 1em;
+    position: relative;
+}
+.map h1{
+    color:#F97300;
+    margin: 2em;
+}
+.map img{
+  /*  margin-left: 50px;*/
+    height: 68%;
+    width: 100%;
+}
+.map h3{
+    text-align: right;
+    background-color: #10828C;
+    color: white;
+    display: inline-block;
+}
+.map span{
+    display: block;
+    color: #888;
+    position: absolute;
+    left: 115px;
+}
+.map .desc{
+    padding: 2em;
+    border-left:5px solid #10828C;
+}
+.map .desc h2{
+    color: #10828C;
+}
+.map .desc p{
+    line-height:2;
+    color:#888;
+}
+.modal-body{
+    overflow-x: hidden;
+    height: 500px;
+}
+button{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    /*width: 400px;*/
+    width: 250px;
+    background-color: cadetblue;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
+}
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+
+.intselect {
+  display: flex;
+}
+
+.buybutton {
+  color: red;
+}
+
+.points {
+  max-width: 50px;
+}
+.menu-main {
+    list-style: none;
+    /*margin: 40px 0 5px;*/
+    padding: 25px 0 5px;
+    text-align: center;
+    background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #10828C;}
+.menu-main a:before,
+.menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #10828C;
+    transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+    .menu-main {padding-top: 0;}
+    .menu-main li {display: block;}
+    .menu-main li:after {content: none;}
+    .menu-main a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
+}
+.progress-bar{
+    background-color: #0f727b !important;
+}
+
+/*td {*/
+/*    border: solid 1px;*/
+/*}*/
+
+.container {
+    overflow-y: scroll;
+    max-height: 225px;
+    /*overflow: scroll;*/
+}
+.modal-body td{
+    padding: 0;
+    font-size: 10px;
+}
+
+label{
+    font-size: 20px;
+    background-color: #10828C;
+    color: white;
+}
+/*tr{*/
+/*    max-height: 100%;*/
+/*}*/
+td{
+    font-size: 20px;
+}
+.progress-bar{
+    color: black!important;
+}

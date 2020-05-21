@@ -1,0 +1,114 @@
+body{
+    height: 100%;
+}
+.profile{
+    /*margin: 4em 0;*/
+    padding: 1em;
+    position: relative;
+}
+.prof{
+    background: #888888;
+}
+.profile h1{
+    color: #10828C;
+    margin: 2em;
+    display: flex;
+    justify-content: center; /*Центрирование по горизонтали*/
+    align-items: center;
+}
+.profile img{
+    height: 80%;
+    width: 100%;
+    border-radius: 30%
+}
+.profile h2{
+    color: #10828C;
+    margin: 2em;
+    display: flex;
+    align-items: center;
+}
+.profile span{
+    display: block;
+    color: #888;
+    position: absolute;
+    left: 115px;
+}
+.profile .desc{
+    padding: 2em;
+    border-left:4px solid #10828C;
+}
+.profile .desc h4 {
+    color: #10828C;
+}
+button{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 500px;
+    background-color: cadetblue;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
+}
+.menu-main {
+    list-style: none;
+    /*margin: 40px 0 5px;*/
+    padding: 25px 0 5px;
+    text-align: center;
+    background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #10828C;}
+.menu-main a:before,
+.menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #10828C;
+    transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+    .menu-main {padding-top: 0;}
+    .menu-main li {display: block;}
+    .menu-main li:after {content: none;}
+    .menu-main a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
+}
